@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11: Chèn tệp tin đa phương tiện và khung nội tuyến</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            max-width: 100%;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .home-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100px;
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bài 11: Chèn tệp tin đa phương tiện và khung nội tuyến</h1>
+
+    <!-- LUYỆN TẬP 1 -->
+    <div class="section">
+        <h2>Luyện tập 1</h2>
+        <p>Cho ảnh có kích thước gốc là <strong>720x450 pixel</strong>, chèn ảnh vào trang web bằng câu lệnh:</p>
+        <pre>&lt;img src="images/1.png" alt="Chiếc lá" width="600"&gt;</pre>
+        <p><strong>Kích thước ảnh trong trang web:</strong></p>
+        <ul>
+            <li>Tỉ lệ kích thước ảnh gốc: <code>height/width = 450/720 = 5/8</code></li>
+            <li>Trong trang web: <code>width = 600(px)</code>, <code>height = 600 x 5/8 = 375(px)</code></li>
+        </ul>
+        <p><strong>Kích thước cuối cùng:</strong> 600px x 375px</p>
+    </div>
+
+    <!-- LUYỆN TẬP 2 -->
+    <div class="section">
+        <h2>Luyện tập 2</h2>
+        <p>Trang web giới thiệu bản thân với ảnh của bạn và danh sách bạn cùng lớp:</p>
+        <p><strong>Code mẫu:</strong></p>
+        <pre>
+&lt;img src="path_to_your_image/image1.jpg" alt="Ảnh của bạn"&gt;
+&lt;img src="path_to_your_image/image2.jpg" alt="Ảnh của bạn"&gt;
+&lt;img src="path_to_your_image/image3.jpg" alt="Ảnh của bạn"&gt;
+        </pre>
+        <h3>Ảnh của tôi</h3>
+        <img src="https://via.placeholder.com/600x375" alt="Ảnh của bạn">
+        <img src="https://via.placeholder.com/600x375" alt="Ảnh của bạn">
+        <img src="https://via.placeholder.com/600x375" alt="Ảnh của bạn">
+        <h3>Bạn cùng lớp</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/friend1" target="_blank">Facebook của Bạn 1</a></li>
+            <li><a href="https://www.facebook.com/friend2" target="_blank">Facebook của Bạn 2</a></li>
+            <li><a href="https://www.facebook.com/friend3" target="_blank">Facebook của Bạn 3</a></li>
+        </ul>
+    </div>
+
+    <!-- VẬN DỤNG -->
+    <div class="section">
+        <h2>Vận dụng</h2>
+        <p>Chèn khung nội tuyến chứa bài hát yêu thích từ YouTube:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Nút Home -->
+    <a href="https://uyenthao-robot.github.io/websitenhom5/">Home</a>
+</body>
+
+</html>
